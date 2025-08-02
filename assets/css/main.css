@@ -601,25 +601,35 @@ section,
 
 .about .content ul {
   list-style: none;
+  width: 100%;
   padding: 0;
 }
 
-.about .content ul li {
-  margin-bottom: 20px;
-/*  display: flex;*/
-  align-items: center;
+.about .content ul strong {
+  /* 將 margin-right 改為固定寬度，讓標題寬度一致 */
+  display: inline-block;
+  width: 120px; /* 固定寬度，可調整 */
+  flex-shrink: 0;  /* 不縮小 */
 }
 
-.about .content ul strong {
-  margin-right: 10px;
+.about .content ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start; /* 改成頂部對齊，避免多行文字中間對齊怪怪 */
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: var(--accent-color);
-  line-height: 0;
+  flex-shrink: 0;
 }
+
+.about .content ul span {
+  flex: 1;               /* 讓內容欄位撐滿剩餘寬度 */
+  word-break: break-word; /* 內容過長可換行 */
+}
+
 
 /*--------------------------------------------------------------
 # Stats Section
