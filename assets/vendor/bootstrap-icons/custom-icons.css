@@ -1,0 +1,12 @@
+.bi-plurk::before {
+  content: "";                     /* 必須有 content，空字串即可 */
+  display: inline-block;           /* 讓元素有尺寸 */
+  width: 24px;                    /* 依圖示大小調整 */
+  height: 24px;
+  background-image: url("../../img/icon_plurk.png"); /* 圖片路徑 */
+  background-size: contain;       /* 圖片自動縮放適應 */
+  background-repeat: no-repeat;   /* 不重複 */
+  background-position: center;    /* 置中 */
+  vertical-align: middle;         /* 垂直對齊 */
+}
+
