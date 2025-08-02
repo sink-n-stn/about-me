@@ -3,10 +3,33 @@
   display: inline-block;           /* 讓元素有尺寸 */
   width: 24px;                    /* 依圖示大小調整 */
   height: 24px;
-  background-image: url("../../img/icon_plurk.png"); /* 圖片路徑 */
+  background-image: url("../../img/icon-plurk.png"); /* 圖片路徑 */
   background-size: contain;       /* 圖片自動縮放適應 */
   background-repeat: no-repeat;   /* 不重複 */
   background-position: center;    /* 置中 */
   vertical-align: middle;         /* 垂直對齊 */
 }
 
+/* hover 狀態換圖 */
+.bi-plurk:hover::before {
+  background-image: url("../../img/icon-plurk-colored.png");
+  transition: background-image 0.15s ease; /* 加上過渡時間 */
+}
+
+.bi-facebook::before {
+  content: "";                     /* 必須有 content，空字串即可 */
+  display: inline-block;           /* 讓元素有尺寸 */
+  width: 24px;                    /* 依圖示大小調整 */
+  height: 24px;
+  background-image: url("../../img/icon-facebook.png"); /* 圖片路徑 */
+  background-size: contain;       /* 圖片自動縮放適應 */
+  background-repeat: no-repeat;   /* 不重複 */
+  background-position: center;    /* 置中 */
+  vertical-align: middle;         /* 垂直對齊 */
+}
+
+/* hover 狀態換圖 */
+.bi-facebook:hover::before {
+  background-image: url("../../img/icon-facebook-colored.png");
+  transition: background-image 0.15s ease; /* 加上過渡時間 
+}
