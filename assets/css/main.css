@@ -12,8 +12,8 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Noto Serif TC", "Songti TC", serif, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
+  --default-font: "Noto Serif TC",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Noto Serif TC",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
@@ -549,14 +549,14 @@ section,
 }
 
 .hero h2 {
-  margin: 0;
-  font-size: 64px;
+  margin: 10px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
+  margin: 10px;
+  font-size: 24px;
 }
 
 .hero p span {
@@ -569,11 +569,11 @@ section,
 }
 
 .hero .social-links a {
-  font-size: 20px;
+  font-size: 16px;
   display: inline-block;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   line-height: 1;
-  margin-right: 20px;
+  margin: 0px 20px;
   transition: 0.3s;
 }
 
@@ -594,9 +594,20 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .content {
+  display: flex;
+  flex-direction: column;       /* 如果你希望上下排列 */
+  justify-content: flex-end;      /* 垂直置中 */
+  margin: 10px 0;
+}
+
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+  margin: 10px 0 20px 0;
+  padding-bottom: 10px;  /* 底部內距，讓線和文字有空間 */
+  border-bottom: 2px solid var(--accent-color); /* 分隔線，顏色與粗細可調 */
 }
 
 .about .content ul {
@@ -628,6 +639,11 @@ section,
 .about .content ul span {
   flex: 1;               /* 讓內容欄位撐滿剩餘寬度 */
   word-break: break-word; /* 內容過長可換行 */
+}
+
+.about .content img {
+    border-radius: 50%; /* 可自訂數值，如 50% 代表完全圓形 */
+    width: 100%;
 }
 
 
@@ -710,6 +726,7 @@ section,
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;

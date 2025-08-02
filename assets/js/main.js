@@ -8,6 +8,18 @@
 
 (function() {
   "use strict";
+    
+  // 重新整理時清除 localStorage 或 sessionStorage（視你紀錄的需求調整）
+  window.addEventListener('load', function() {
+    localStorage.removeItem('headerStatus');
+    sessionStorage.clear();
+
+    if (window.location.hash) {
+      history.replaceState(null, null, ' ');
+    }
+
+    window.scrollTo(0, 0);
+  });
 
   /**
    * Header toggle
