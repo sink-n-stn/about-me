@@ -3,6 +3,7 @@
   display: inline-block;           /* 讓元素有尺寸 */
   width: 24px;                    /* 依圖示大小調整 */
   height: 24px;
+  margin: 10px 0px;
   background-image: url("../../img/icon-plurk.png"); /* 圖片路徑 */
   background-size: contain;       /* 圖片自動縮放適應 */
   background-repeat: no-repeat;   /* 不重複 */
@@ -21,6 +22,7 @@
   display: inline-block;           /* 讓元素有尺寸 */
   width: 24px;                    /* 依圖示大小調整 */
   height: 24px;
+  margin: 10px 0px;
   background-image: url("../../img/icon-facebook.png"); /* 圖片路徑 */
   background-size: contain;       /* 圖片自動縮放適應 */
   background-repeat: no-repeat;   /* 不重複 */
