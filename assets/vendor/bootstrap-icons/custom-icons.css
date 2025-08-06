@@ -11,11 +11,7 @@
   vertical-align: middle;         /* 垂直對齊 */
 }
 
-/* hover 狀態換圖 */
-.bi-plurk:hover::before {
-  background-image: url("../../img/icon-plurk-colored.png");
-  transition: background-image 0.15s ease; /* 加上過渡時間 */
-}
+
 
 .bi-facebook::before {
   content: "";                     /* 必須有 content，空字串即可 */
@@ -30,8 +26,3 @@
   vertical-align: middle;         /* 垂直對齊 */
 }
 
-/* hover 狀態換圖 */
-.bi-facebook:hover::before {
-  background-image: url("../../img/icon-facebook-colored.png");
-  transition: background-image 0.15s ease; /* 加上過渡時間 
-}
