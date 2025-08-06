@@ -473,7 +473,7 @@ section,
 .section {
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 60px 40px;
+    padding: 60px 20px;
     overflow: clip;
 }
 
